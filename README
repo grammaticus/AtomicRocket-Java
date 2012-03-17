@@ -1,0 +1,74 @@
+-------------------------------------------------------------------------------
+/* AtomicRocket-Java README */
+/* Last Updated: 16 Mar 2012 */
+/* Version 1.0 */
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+/* DESCRIPTION */
+The purpose of this project is to implement equations dealing with the effects
+of relativity on ships travelling near the speed of light.  The equations can 
+be found on the Atomic Rocket page (www.projectrho.com/rocket/), under the 
+"Slower Than Light" section.
+(http://www.projectrho.com/rocket/slowerlight.php#id--Relativity)
+I make no claims to the correctness of these equations - the author of the site
+himself makes a similar disclaimer.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+/* COMPILE AND RUN */
+Linux:
+    ~/AtomicRocket-Java/relativistic $> javac relativistic/*.java
+    ~/AtomicRocket-Java/relativistic $> java relativistic/Main
+
+Alternatively just use your favorite IDE.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+/* INCLUDED FILES */
+All Java files can be found in the package "relativistic".
+
+Main.java
+    - User input menus
+
+Ship.java
+    - Methods for data pertaining to ship (acceleration, exhaust velocity, mass 
+        ratio, and travel time (proper))
+
+Terra.java
+    - Methods for data pertaining to Terra (travel time and distance)
+
+Formulae.java
+    - All formulae needed to make calculations and conversions, as well as some
+        cosntants
+    - Constants
+        - C: speed of light
+        - SECS: seconds in a year
+        - LY: meters in a lightyear
+    - Hyperbolic arc-trig functions (atanh, acosh, and asinh)
+    - Unit Conversions
+        - years: seconds to years
+        - seconds: years to seconds
+        - meters: lightyears to meters
+        - lightyears: meters to light years
+    - PSL: percent light speed
+    - Travel time from Terra's frame of reference
+        - using acceleration and proper time
+        - using exhaust velocity, mass ratio, and acceleration
+        - using acceleration and distance
+    - Distance
+        - using acceleration and proper time (ship's frame of reference)
+        - using exhaust velocity, mass ratio, and acceleration
+        - using acceleration and Terra time
+    - Final velocity
+        - using acceleration and proper time (ship's frame of reference)
+        - using exhaust velocity, mass ratio, and acceleration
+        - using acceleration and Terra time
+    - Proper Time (ship's frame of reference)
+        - using acceleration and Terra time
+        - using acceleration and distance
+    - Gamma (time dilation factor)
+        - using acceleration and proper time (ship's frame of reference)
+        - using exhaust velocity, and mass ratio
+        - using acceleration and Terra time
+        - using acceleration and distance
