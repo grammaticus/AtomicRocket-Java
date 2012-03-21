@@ -82,7 +82,7 @@ public class Main {
             System.out.println("What information do you have?\n"
                     + "[1] Terra Time\n"
                     + "[2] Distance\n"
-						  + "[3] No Data");
+		    + "[3] No Data");
 
             try {
                 choice = Integer.parseInt(data.readLine());
