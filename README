@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 /* AtomicRocket-Java README */
-/* Last Updated: 16 Mar 2012 */
+/* Last Updated: 21 Mar 2012 */
 /* Version 1.0 */
 -------------------------------------------------------------------------------
 
@@ -18,8 +18,8 @@ himself makes a similar disclaimer.
 -------------------------------------------------------------------------------
 /* COMPILE AND RUN */
 Linux:
-    ~/AtomicRocket-Java/relativistic $> javac relativistic/*.java
-    ~/AtomicRocket-Java/relativistic $> java relativistic/Main
+    ~/AtomicRocket-Java/ $> javac relativistic/*.java
+    ~/AtomicRocket-Java/ $> java relativistic/Main
 
 Alternatively just use your favorite IDE.
 -------------------------------------------------------------------------------

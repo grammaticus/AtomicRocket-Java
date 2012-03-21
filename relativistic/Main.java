@@ -81,7 +81,8 @@ public class Main {
             choice = 0;
             System.out.println("What information do you have?\n"
                     + "[1] Terra Time\n"
-                    + "[2] Distance\n");
+                    + "[2] Distance\n"
+						  + "[3] No Data");
 
             try {
                 choice = Integer.parseInt(data.readLine());
@@ -92,6 +93,8 @@ public class Main {
                 myTerra.setTTime();
             } else if (choice == 2) {
                 myTerra.setD();
+				} else if (choice == 3) {
+					break;
             } else {
                 System.out.println("You have entered an invalid number; please"
                         + "try again.");
